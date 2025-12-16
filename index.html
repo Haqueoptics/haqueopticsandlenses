@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Haque Optics & Lenses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Haque Optics & Lenses</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Premium Contact Lenses in India</h1>
+      <p>Colored, clear, daily and monthly lenses – safe, comfortable, and stylish.</p>
+      <a class="btn-primary" href="#products">Shop Collection</a>
+    </section>
+
+    <section id="products" class="products-section">
+      <h2>Featured Lenses</h2>
+      <div class="product-grid">
+        <!-- Product card 1 -->
+        <article class="product-card">
+          <img src="https://via.placeholder.com/300x300" alt="Hazel Brown Lenses" />
+          <h3>Hazel Brown (Monthly)</h3>
+          <p class="price">₹1,499</p>
+          <p class="short-desc">Soft, natural hazel shade for everyday wear.</p>
+          <a class="btn-secondary" href="#">View details</a>
+        </article>
+
+        <!-- Product card 2 -->
+        <article class="product-card">
+          <img src="https://via.placeholder.com/300x300" alt="Ocean Blue Lenses" />
+          <h3>Ocean Blue (Daily)</h3>
+          <p class="price">₹1,199</p>
+          <p class="short-desc">Bright, vibrant blue for a bold look.</p>
+          <a class="btn-secondary" href="#">View details</a>
+        </article>
+
+        <!-- Product card 3 -->
+        <article class="product-card">
+          <img src="https://via.placeholder.com/300x300" alt="Emerald Green Lenses" />
+          <h3>Emerald Green (Monthly)</h3>
+          <p class="price">₹1,599</p>
+          <p class="short-desc">Rich green tone for special occasions.</p>
+          <a class="btn-secondary" href="#">View details</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>About Haque Optics & Lenses</h2>
+      <p>
+        We are an Indian optical brand specializing in high-quality contact lenses.
+        Our goal is to provide safe, comfortable and stylish lenses at honest prices.
+      </p>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact & Orders</h2>
+      <p>WhatsApp: <a href="https://wa.me/91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
+      <p>Instagram: <a href="#" target="_blank">@haqueoptics</a></p>
+      <p>Store Location: Your City, India</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Haque Optics & Lenses. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
