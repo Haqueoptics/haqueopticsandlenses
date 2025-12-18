@@ -2,192 +2,328 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Haque Optics & Lenses – Premium Colored Lenses</title>
+  <title>Haque Optics & Lenses – Premium Colored Contact Lenses</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>
-
   <!-- PROMO BAR -->
   <div class="promo-bar">
-    🎉 Festive Offer: Flat 15% OFF – Use Code <strong>HAQUE15</strong>
+    Festive Offer: Flat 15% OFF on selected colored lenses – Use code <strong>HAQUE15</strong>
   </div>
 
   <!-- HEADER -->
   <header class="site-header">
-    <!-- Logo image on top-left -->
     <a href="index.html" class="logo">
-      <!-- IMPORTANT: file must exist at assets/logo.jpeg (folder name exactly 'assets') -->
+      <!-- make sure this file exists as assets/logo.jpeg -->
       <img src="assets/logo.jpeg" alt="Haque Optics and Lenses Logo" />
     </a>
 
     <nav class="main-nav">
       <a href="#shop">Shop</a>
-      <a href="#colors">Colors</a>
-      <a href="#replacement">Replacement</a>
+      <a href="#colors">Shop by Color</a>
+      <a href="#influencers">Influencers</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
+    <!-- HERO -->
+    <section class="hero" id="top">
       <div class="hero-text">
         <p class="eyebrow">Premium Contact Lenses</p>
-        <h1>Natural Looking Colored Lenses</h1>
+        <h1>Natural Looking Colored Lenses for Every Occasion.</h1>
         <p class="hero-subtitle">
-          Beautiful, comfortable and high-quality lenses designed for Indian eyes.
+          Haque Optics &amp; Lenses offers high-quality, comfortable contact lenses designed to
+          enhance your natural eye color while keeping your eyes healthy.
         </p>
-
         <div class="hero-actions">
-          <a class="btn-primary" href="#shop">Shop Now</a>
-          <a class="btn-ghost" href="#learn">Lens Care</a>
+          <a class="btn-primary" href="#shop">Shop Lenses</a>
+          <a class="btn-outline" href="#colors">Browse by Color</a>
         </div>
+        <p class="hero-note">Based in Mumbai • Pan-India delivery options available.</p>
       </div>
 
-      <div class="hero-image">
-        <div class="hero-image-card">
-          <span class="badge">New</span>
-          <div class="hero-image-circle"></div>
-          <p class="hero-image-caption">Signature Hazel Collection</p>
-        </div>
+<div class="hero-image">
+  <div class="hero-video-card zoomed">
+
+    <!-- Video background -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/small.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay text -->
+    <div class="hero-video-overlay">
+      <span class="hero-pill">TRENDING</span>
+      <div class="hero-video-text">
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    </section>
+
+    <!-- SHOP BY COLOR -->
+    <section id="colors" class="section section-colors">
+      <div class="section-heading">
+        <h2>Shop by Color</h2>
+        <p class="section-subtitle">
+          Choose from soft, natural tones to bold party shades. Tap a color to explore lenses in
+          that family.
+        </p>
+      </div>
+
+      <!-- Color Pills -->
+      <div class="color-pill-row">
+        <button class="color-pill">Brown</button>
+        <button class="color-pill">Hazel</button>
+        <button class="color-pill">Gray</button>
+        <button class="color-pill">Blue</button>
+        <button class="color-pill">Green</button>
+        <button class="color-pill pill-outline">All Colors</button>
+      </div>
+
+      <!-- Color Cards row (scrollable on mobile) -->
+      <div class="color-card-row">
+        <article class="color-card">
+          <div class="color-card-swatch swatch-brown"></div>
+          <h3>Natural Browns</h3>
+          <p>Soft, warm tones that blend beautifully with everyday looks.</p>
+          <a href="#shop" class="link-underline">View brown lenses</a>
+        </article>
+
+        <article class="color-card">
+          <div class="color-card-swatch swatch-hazel"></div>
+          <h3>Golden Hazels</h3>
+          <p>Light-catching hazel shades with a subtle golden glow.</p>
+          <a href="#shop" class="link-underline">View hazel lenses</a>
+        </article>
+
+        <article class="color-card">
+          <div class="color-card-swatch swatch-gray"></div>
+          <h3>Cool Grays</h3>
+          <p>Modern gray tones for editorial, selfie-ready looks.</p>
+          <a href="#shop" class="link-underline">View gray lenses</a>
+        </article>
+
+        <article class="color-card">
+          <div class="color-card-swatch swatch-blue"></div>
+          <h3>Ocean Blues</h3>
+          <p>Bright, striking blue lenses that still feel premium.</p>
+          <a href="#shop" class="link-underline">View blue lenses</a>
+        </article>
       </div>
     </section>
 
-    <!-- COLORS -->
-    <section id="colors" class="pill-section">
-      <h2>Shop by Color</h2>
-      <p class="section-subtitle">Find your perfect shade.</p>
-      <div class="pill-row">
-        <button class="pill">Brown</button>
-        <button class="pill">Hazel</button>
-        <button class="pill">Gray</button>
-        <button class="pill">Blue</button>
-        <button class="pill">Green</button>
-        <button class="pill pill-outline">Trending</button>
-      </div>
-    </section>
-
-    <!-- REPLACEMENT -->
-    <section id="replacement" class="pill-section">
-      <h2>Replacement Cycle</h2>
-      <p class="section-subtitle">Choose lenses based on how long you want to wear them.</p>
-      <div class="pill-row">
-        <button class="pill">Daily</button>
-        <button class="pill">Monthly</button>
-        <button class="pill">Quarterly</button>
-        <button class="pill">Yearly</button>
-      </div>
-    </section>
-
-    <!-- PRODUCT GRID -->
-    <section id="shop" class="products-section">
+    <!-- FEATURED PRODUCTS -->
+    <section id="shop" class="section section-products">
       <div class="section-heading">
         <h2>Featured Lenses</h2>
-        <p class="section-subtitle">Customer favourites</p>
+        <p class="section-subtitle">
+          A curated selection of our most requested colors. You can update images and details
+          later.
+        </p>
       </div>
 
       <div class="product-grid">
-
         <!-- PRODUCT 1 -->
         <article class="product-card">
-          <div class="product-badge-row">
-            <span class="product-badge">Best Seller</span>
-            <span class="product-badge subtle">Monthly</span>
-          </div>
           <div class="product-image-wrap">
-            <img src="https://via.placeholder.com/400x400" alt="Hazel Glow" />
+            <img src="https://via.placeholder.com/420x420" alt="Hazel Glow Lens" />
           </div>
+          <p class="product-tag">Monthly</p>
           <h3>Hazel Glow</h3>
-          <p class="product-meta">Color: Hazel • Monthly</p>
-          <p class="price">₹1,499</p>
-          <p class="short-desc">Soft, warm hazel tone with a natural finish.</p>
+          <p class="product-meta">Color: Hazel • Power &amp; Plano options</p>
+          <p class="product-price">₹1,499</p>
+          <p class="product-desc">
+            A warm hazel shade that enhances brown eyes with a soft golden ring.
+          </p>
           <a class="btn-secondary full-width" href="products/hazel-glow-monthly.html">View details</a>
         </article>
 
         <!-- PRODUCT 2 -->
         <article class="product-card">
-          <div class="product-badge-row">
-            <span class="product-badge">New</span>
-            <span class="product-badge subtle">Daily</span>
-          </div>
           <div class="product-image-wrap">
-            <img src="https://via.placeholder.com/400x400" alt="Ocean Mist" />
+            <img src="https://via.placeholder.com/420x420" alt="Ocean Mist Lens" />
           </div>
+          <p class="product-tag">Daily</p>
           <h3>Ocean Mist</h3>
-          <p class="product-meta">Color: Blue • Daily</p>
-          <p class="price">₹1,299</p>
-          <p class="short-desc">Bright blue shade for striking looks.</p>
+          <p class="product-meta">Color: Blue • Daily disposable</p>
+          <p class="product-price">₹1,299</p>
+          <p class="product-desc">
+            A fresh blue lens ideal for photoshoots, parties and special events.
+          </p>
           <a class="btn-secondary full-width" href="products/ocean-mist-daily.html">View details</a>
         </article>
 
         <!-- PRODUCT 3 -->
         <article class="product-card">
-          <div class="product-badge-row">
-            <span class="product-badge subtle">Yearly</span>
-          </div>
           <div class="product-image-wrap">
-            <img src="https://via.placeholder.com/400x400" alt="Emerald Luxe" />
+            <img src="https://via.placeholder.com/420x420" alt="Emerald Luxe Lens" />
           </div>
+          <p class="product-tag">Yearly</p>
           <h3>Emerald Luxe</h3>
-          <p class="product-meta">Color: Green • Yearly</p>
-          <p class="price">₹1,799</p>
-          <p class="short-desc">Deep green shade for a bold, premium look.</p>
+          <p class="product-meta">Color: Green • Long-wear yearly lens</p>
+          <p class="product-price">₹1,799</p>
+          <p class="product-desc">
+            A deep emerald tone that stands out without looking artificial.
+          </p>
           <a class="btn-secondary full-width" href="products/emerald-luxe-yearly.html">View details</a>
         </article>
 
+        <!-- PRODUCT 4 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="https://via.placeholder.com/420x420" alt="Soft Brown Lens" />
+          </div>
+          <p class="product-tag">Monthly</p>
+          <h3>Soft Brown Veil</h3>
+          <p class="product-meta">Color: Brown • Ultra-natural finish</p>
+          <p class="product-price">₹1,499</p>
+          <p class="product-desc">
+            Subtle brown enhancement ideal for daily wear and office looks.
+          </p>
+          <a class="btn-secondary full-width" href="#contact">Enquire on WhatsApp</a>
+        </article>
       </div>
     </section>
 
-    <!-- TRUST -->
-    <section id="learn" class="trust-section">
-      <h2>Why Choose Haque Lenses?</h2>
+    <!-- INFLUENCERS SECTION -->
+    <section id="influencers" class="section section-influencers">
+      <div class="section-heading">
+        <h2>Seen On Creators &amp; Influencers</h2>
+        <p class="section-subtitle">
+          Showcase photos from customers and local creators wearing Haque lenses. Replace the
+          placeholders with your own images later.
+        </p>
+      </div>
 
-      <div class="trust-grid">
-        <div class="trust-item">
-          <h3>Comfort First</h3>
-          <p>Premium lens materials that keep your eyes fresh.</p>
-        </div>
+      <div class="influencer-row">
+        <article class="influencer-card">
+          <div class="influencer-image">
+            <img src="https://via.placeholder.com/320x400" alt="Influencer 1" />
+          </div>
+          <p class="influencer-name">@modelname</p>
+          <p class="influencer-meta">Wearing: Hazel Glow</p>
+        </article>
 
-        <div class="trust-item">
-          <h3>Natural Colors</h3>
-          <p>Shades crafted to suit Indian skin tones beautifully.</p>
-        </div>
+        <article class="influencer-card">
+          <div class="influencer-image">
+            <img src="https://via.placeholder.com/320x400" alt="Influencer 2" />
+          </div>
+          <p class="influencer-name">@creatorhandle</p>
+          <p class="influencer-meta">Wearing: Ocean Mist</p>
+        </article>
 
-        <div class="trust-item">
-          <h3>Easy Ordering</h3>
-          <p>Order directly via WhatsApp — fast and hassle-free.</p>
-        </div>
+        <article class="influencer-card">
+          <div class="influencer-image">
+            <img src="https://via.placeholder.com/320x400" alt="Influencer 3" />
+          </div>
+          <p class="influencer-name">@makeupartist</p>
+          <p class="influencer-meta">Wearing: Emerald Luxe</p>
+        </article>
+
+        <article class="influencer-card">
+          <div class="influencer-image">
+            <img src="https://via.placeholder.com/320x400" alt="Influencer 4" />
+          </div>
+          <p class="influencer-name">@beautyblogger</p>
+          <p class="influencer-meta">Wearing: Soft Brown Veil</p>
+        </article>
       </div>
     </section>
 
+    <!-- ABOUT "CAROUSEL" (HORIZONTAL CARDS) -->
+    <section id="about" class="section section-about">
+      <div class="section-heading">
+        <h2>About Haque Optics &amp; Lenses</h2>
+        <p class="section-subtitle">
+          An optical store based in Mumbai, bringing curated coloured lenses and eye-care
+          expertise together.
+        </p>
+      </div>
 
-    <!-- ABOUT & CONTACT -->
-    <section id="about" class="about-section">
-      <h2>About Haque Optics &amp; Lenses</h2>
-      <p>
-        Haque Optics &amp; Lenses is an optical store based in Mumbai, India. Specializing in    high-quality contact lenses and eye care. We focus on comfort, safety and natural-looking results.
-      </p>
+      <div class="about-card-row">
+        <article class="about-card">
+          <h3>Our Story</h3>
+          <p>
+            Haque Optics &amp; Lenses was created to offer premium coloured contact lenses that feel
+            comfortable for long wear in Indian weather. Every collection is carefully selected and tested.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <h3>Comfort &amp; Safety</h3>
+          <p>
+            We focus on high-quality materials, clear usage guidance and proper lens care.
+            Customers are always advised to follow eye-care professional recommendations.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <h3>How to Order</h3>
+          <p>
+            Browse the lenses on this site, then place your order directly via WhatsApp or
+            visit us in-store in Mumbai for personalised shade suggestions.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section id="contact" class="contact-section">
-      <h2>Contact &amp; Orders</h2>
-      <p>WhatsApp: <a href="https://wa.me/91XXXXXXXXXX" target="_blank">+91-6394061775</a></p>
-      <p>Email: <a href="#" target="_blank">haqueopticsandlenses@gmail.com</a></p>
-      <p>Mumbai, India</p>
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="section-heading">
+        <h2>Contact &amp; Orders</h2>
+        <p class="section-subtitle">
+          Have questions about shades, power, or comfort? Reach out and we’ll guide you.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h3>WhatsApp</h3>
+          <p>
+            Chat with us for shade recommendations, availability and orders.
+          </p>
+          <a class="btn-primary" href="https://wa.me/916394061775" target="_blank">
+            Message on WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-block">
+          <h3>Email</h3>
+          <p>For collaboration enquiries or bulk orders, email us anytime.</p>
+          <a class="link-underline" href="mailto:haqueopticsandlenses@gmail.com">
+            haqueopticsandlenses@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-block">
+          <h3>Location</h3>
+          <p>
+            Haque Optics &amp; Lenses<br />
+            Mumbai, India
+          </p>
+          <p class="contact-note">
+            Visit in person for live shade trials and prescription support.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <p>© <span id="year"></span> Haque Optics &amp; Lenses. All rights reserved.</p>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
