@@ -14,19 +14,30 @@
   </div>
 
   <!-- HEADER -->
-  <header class="site-header">
-    <a href="index.html" class="logo">
-      <!-- make sure this file exists as assets/logo.jpeg -->
-      <img src="assets/logo.jpeg" alt="Haque Optics and Lenses Logo" />
-    </a>
+ <header class="site-header">
+  <a href="index.html" class="logo">
+    <img src="assets/logo.jpeg" alt="Haque Optics and Lenses Logo" />
+  </a>
 
-    <nav class="main-nav">
+  <div class="nav-area">
+    <!-- Mobile hamburger toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-hamburger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Menu links (desktop shows inline, mobile shows dropdown) -->
+    <nav class="main-nav" aria-label="Primary">
       <a href="#colors">Shop by Color</a>
       <a href="#influencers">Influencers</a>
       <a href="#about">About Us</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
+
 
   <main>
     <!-- HERO -->
