@@ -383,6 +383,137 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* ===========================
+   PRODUCT STRIP (Color Pages)
+   =========================== */
+
+.lens-strip {
+  background: #ffffff;
+}
+
+.lens-track {
+  display: flex;
+  gap: 1.1rem;
+  overflow-x: auto;
+  padding: 0.25rem 0 0.75rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.lens-track::-webkit-scrollbar {
+  height: 8px;
+}
+
+.lens-track::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.15);
+}
+
+.lens-card {
+  flex: 0 0 320px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  border-radius: 0;              /* sharp corners (no rounding) */
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.lens-card__img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+.lens-card__body {
+  padding: 0.9rem;
+}
+
+.lens-card__top {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.55rem;
+}
+
+.lens-chip {
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.55rem;
+  font-size: 0.78rem;
+  background: #ffffff;
+}
+
+.lens-wish {
+  margin-left: auto;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.lens-title {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.lens-meta {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  margin-bottom: 0.55rem;
+}
+
+.lens-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.65rem;
+}
+
+.lens-rating .star {
+  color: var(--gold);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.lens-rating .sold {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.lens-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.lens-price .mrp {
+  color: var(--text-muted);
+  text-decoration: line-through;
+  font-size: 0.92rem;
+}
+
+.lens-price .sale {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.lens-price .off {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .lens-card {
+    flex: 0 0 84vw;   /* big swipe cards on mobile */
+    max-width: 360px;
+  }
+}
 
 /* ===========================
    FEATURED PRODUCTS
