@@ -107,67 +107,65 @@
 
 
     <!-- INFLUENCERS SECTION -->
-   <!-- INFLUENCERS SECTION -->
 <section id="influencers" class="section section-influencers">
   <div class="section-heading">
     <h2>Seen On Creators &amp; Influencers</h2>
-    <p class="section-subtitle">
-      Tap a reel to watch the creator’s video.
-    </p>
+    <p class="section-subtitle">Tap a reel to watch the creator’s video.</p>
   </div>
 
   <div class="influencer-row">
 
-    <!-- Creator 1 -->
-    <a class="influencer-card" href="https://www.instagram.com/reel/DSSh7AqE6kK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener">
-      <div class="influencer-media">
-        <video class="influencer-reel" autoplay muted loop playsinline preload="metadata">
-          <source src="assets/reels/creator1.mp4" type="video/mp4" />
-        </video>
+    <div class="influencer-card">
+      <div class="ig-reel">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DSSh7AqE6kK/"
+          data-instgrm-version="14"
+          data-instgrm-captioned="false"></blockquote>
       </div>
       <div class="influencer-caption">
         <p class="influencer-name">Antra_agarwal24</p>
       </div>
-    </a>
+    </div>
 
-    <!-- Creator 2 -->
-    <a class="influencer-card" href="https://www.instagram.com/reel/DRw0lbhko2g/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener">
-      <div class="influencer-media">
-        <video class="influencer-reel" autoplay muted loop playsinline preload="metadata">
-          <source src="assets/reels/creator2.mp4" type="video/mp4" />
-        </video>
+    <div class="influencer-card">
+      <div class="ig-reel">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DRw0lbhko2g/"
+          data-instgrm-version="14"
+          data-instgrm-captioned="false"></blockquote>
       </div>
       <div class="influencer-caption">
         <p class="influencer-name">Palakbhandariii</p>
       </div>
-    </a>
+    </div>
 
-    <!-- Creator 3 -->
-    <a class="influencer-card" href="https://www.instagram.com/reel/DPHFolKjHZY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener">
-      <div class="influencer-media">
-        <video class="influencer-reel" autoplay muted loop playsinline preload="metadata">
-          <source src="assets/reels/creator3.mp4" type="video/mp4" />
-        </video>
+    <div class="influencer-card">
+      <div class="ig-reel">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DPHFolKjHZY/"
+          data-instgrm-version="14"
+          data-instgrm-captioned="false"></blockquote>
       </div>
       <div class="influencer-caption">
         <p class="influencer-name">Deekshakhurana</p>
       </div>
-    </a>
+    </div>
 
-    <!-- Creator 4 -->
-    <a class="influencer-card" href="https://www.instagram.com/reel/DFKJi24Pk-o/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener">
-      <div class="influencer-media">
-        <video class="influencer-reel" autoplay muted loop playsinline preload="metadata">
-          <source src="assets/reels/creator4.mp4" type="video/mp4" />
-        </video>
+    <div class="influencer-card">
+      <div class="ig-reel">
+        <blockquote class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DFKJi24Pk-o/"
+          data-instgrm-version="14"
+          data-instgrm-captioned="false"></blockquote>
       </div>
       <div class="influencer-caption">
         <p class="influencer-name">Chandnisinghstudio</p>
       </div>
-    </a>
+    </div>
 
   </div>
 </section>
+
 
 
     <!-- ABOUT "CAROUSEL" (HORIZONTAL CARDS) -->
@@ -250,16 +248,24 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>
-  © <span id="year"></span> Haque Optics &amp; Lenses. Trademarks belong to their owners. Creator reels link to original posts.
-  Rights concerns: <a href="mailto:haqueopticsandlenses@gmail.com">haqueopticsandlenses@gmail.com</a>.
-</p>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Haque Optics &amp; Lenses.</p>
+  <p class="footer-legal">
+    Aqualens, Lenskart and all related names/logos are the property of their respective owners. 
+    Creator content is shown via official Instagram embeds; all rights belong to the original creators. 
+    For any concerns or takedown requests: <a href="mailto:haqueopticsandlenses@gmail.com">haqueopticsandlenses@gmail.com</a>.
+  </p>
+</footer>
 
-  </footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+  <script async src="https://www.instagram.com/embed.js"></script>
+
 </body>
 </html>
