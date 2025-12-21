@@ -281,17 +281,24 @@ img {
   top: 50%;
   left: 50%;
 
-  /* cover trick for 16:9 video */
   width: 100vw;
   height: 56.25vw;      /* 16:9 */
   min-height: 100vh;
   min-width: 177.78vh;  /* 16:9 */
 
-  transform: translate(-50%, -50%);
+  /* 👇 zoom OUT a bit (try 0.92 to 0.98) */
+  transform: translate(-50%, -50%) scale(0.94);
+
   border: 0;
-  pointer-events: none; /* clicks go to your buttons/text, not the video */
-  filter: brightness(0.95);
+  pointer-events: none;
+  filter: brightness(0.65);
 }
+
+/* If zooming out reveals any edges, this keeps them clean */
+.hero-fullscreen{
+  background: #000;
+}
+
 
 .hero-overlay {
   position: absolute;
