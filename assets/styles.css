@@ -659,91 +659,74 @@ img {
   color: var(--text-muted);
 }
 /* ===========================
-   COLOR PAGE HERO (FULL WIDTH – IMAGE FIT FIXED)
+   COLOR PAGE HERO – iPhone/Instagram clipping fix
    =========================== */
 
-.color-hero {
+.color-hero{
   position: relative;
   width: 100%;
-
-  /* Solotica-style safe sizing */
-  height: 70vh;
-  min-height: 480px;
-  max-height: 720px;
-
   overflow: hidden;
+
+  /* safe heights so text doesn't get cut on small phones */
+  height: clamp(420px, 72vh, 720px);
 }
 
+/* Prefer "large viewport height" on iOS/Instagram when available */
+@supports (height: 1lvh){
+  .color-hero{
+    height: clamp(420px, 72lvh, 720px);
+  }
+}
 
-.color-hero img {
+.color-hero img{
   width: 100%;
   height: 100%;
   display: block;
-
   object-fit: cover;
-
-  /* KEY FIX: keep eyes visible */
   object-position: 50% 25%;
 }
 
-
-.color-hero-overlay {
+.color-hero-overlay{
   position: absolute;
   inset: 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+
+  /* IMPORTANT: padding keeps subtitle visible even before scrolling */
+  padding: calc(var(--promo-h) + 2.5rem) 5vw clamp(1.5rem, 5vh, 3rem);
 
   text-align: center;
-  color: #ffffff;
-  padding-top: 250px; /* lowers the text */
-
-  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  background: rgba(0,0,0,0.25);
 }
 
-.color-hero-overlay h1 {
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
+.color-hero-overlay h1{
+  font-size: clamp(2rem, 7vw, 3.2rem);
+  line-height: 1.08;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.55rem;
 }
 
-.color-hero-overlay p {
-  font-size: 0.85rem;
+.color-hero-overlay p{
+  font-size: clamp(0.75rem, 3.2vw, 0.9rem);
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  margin: 0;
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .color-hero {
-    height: 50vh;
-    min-height: 300px;
+/* Extra safety for very small phones */
+@media (max-width: 420px){
+  .color-hero-overlay{
+    padding: calc(var(--promo-h) + 5.3rem) 5vw 3.2rem;
   }
-}
-/* Mobile & narrow screens */
-@media (max-width: 900px) {
-  .color-hero {
-    height: 55vh;
-    min-height: 360px;
-  }
-
-  .color-hero img {
-    object-position: 50% 20%; /* push focus even higher */
+  .color-hero-overlay p{
+    letter-spacing: 0.10em;
   }
 }
 
-@media (max-width: 480px) {
-  .color-hero {
-    height: 50vh;
-    min-height: 300px;
-  }
-
-  .color-hero img {
-    object-position: 50% 15%;
-  }
-}
 
 
 /* ===========================
